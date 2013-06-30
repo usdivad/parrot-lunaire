@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<h2>parrot lunaire</h2>
+<i>by david su, for musicedhack nyc</i>
+</head>
+
+<body>
+
+<!--Tuner() relies on this being classed as tuner, with canvas inside-->
+<div class="tuner" width="100" height="100">
+	<canvas width="199" height="199"></canvas>
+</div>
+<div class="instr">
+	<b>Chirp! Play me some music to begin with, then press the submit button.</b>
+	<div id="clearButton" height="50"><br></div>
+	<div id="submitButton" height="50"><b>(</b>submit<b>)</b></div>
+</div>
+<div class="engraving">
+	<canvas width="1024" height="200"></canvas>
+</div>
+<div id="result" height="100">---</div>
+
+
+
+<!--SCRIPTS-->
+<script type='text/javascript' src='lib/jquery.js'></script>
+<!--tuner & dependencies-->
+<script type='text/javascript' src='lib/three.js'></script>
+<script type='text/javascript' src='lib/dsp.js'></script>
+<script type='text/javascript' src='lib/underscore.js'></script>
+<script type='text/javascript' src='lib/tuner_modified.js'></script>
+<script type='text/javascript' src='lib/vexflow.js'></script>
+<script type='text/javascript' src='peach_parse.js'></script>
+<script type='text/javascript' src='main.js'></script>
+</body>
+
+</html>
